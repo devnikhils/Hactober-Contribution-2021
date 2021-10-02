@@ -1,0 +1,28 @@
+#include <iostream>
+using namespace std;
+
+int main() {
+	// your code goes here
+	int t;
+	cin>>t;
+	while(t--)
+	{
+	    int a,b,c,d;
+	    int ctr=0;
+	    cin>>a>>b>>c>>d;
+	    if(a+b+c <= d)
+	    {   ctr=1;
+	        cout<<ctr<<endl;
+	    }
+	    else if(a+b <=d || a+c<=d || b+c <=d)
+	    {   ctr=2;
+	        cout<<ctr<<endl;
+	    }
+	    else{
+	        ctr=3;
+	        cout<<ctr<<endl;
+	    }
+	    
+	}
+	return 0;
+}
